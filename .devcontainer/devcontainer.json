@@ -6,7 +6,7 @@
 		"dockerfile": "Dockerfile",
 		// Update 'VARIANT' to pick an Ubuntu version: hirsute, focal, bionic
 		// Use hirsute or bionic on local arm64/Apple Silicon.
-		"args": { "VARIANT": "20.04" }
+		"args": { "VARIANT": "22.04" }
 	},
 
 	// Provides runtime arguments to the container
@@ -24,14 +24,14 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"ms-vscode.cpptools-extension-pack",
+		"ms-vscode.cpptools-extension-pack"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "cat .devcontainer/config/better_prompt.sh >> ~/.bashrc",
+	"postCreateCommand": "cat .devcontainer/config/better_prompt.sh >> ~/.bashrc"
 
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	// "remoteUser": "vscode"
